@@ -1,0 +1,24 @@
+{
+  "metadata": {
+    "creation": {
+      "date": "2020-03-31T13:43:05Z",
+      "user": "testuser01"
+    },
+    
+    "last_modification": {
+      "date": "2020-03-31T13:43:05Z",
+      "user": "testuser02"
+    }
+  },
+  
+  "_id":"",
+  "first_name": "Jesse"
+  "last_name": "Pinkman",
+  "street": "Street Northwest"
+  "number": "322",
+  "zip": "8001",
+  "city": "Albuquerque",
+  "email": "jesse.pinkman@breakingbad.com",
+  "phone": "+41787894503"
+}
+

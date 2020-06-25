@@ -1,0 +1,15 @@
+micronaut:
+    application:
+        name: gateway-sample
+    server:
+        port: 8090
+        cors:
+            enabled: true
+
+rabbitmq:
+    #host: bus
+    host: 0.0.0.0
+    #host: 192.168.99.100
+    username: appe
+    password: appe
+

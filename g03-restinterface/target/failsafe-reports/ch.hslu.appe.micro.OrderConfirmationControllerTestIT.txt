@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: ch.hslu.appe.micro.OrderConfirmationControllerTestIT
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 10.042 s <<< FAILURE! - in ch.hslu.appe.micro.OrderConfirmationControllerTestIT
+ch.hslu.appe.micro.OrderConfirmationControllerTestIT.testSearchorderConfirmation  Time elapsed: 10.041 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+
+Expecting:
+ <500>
+to be equal to:
+ <200>
+but was not.
+	at ch.hslu.appe.micro.OrderConfirmationControllerTestIT.testSearchorderConfirmation(OrderConfirmationControllerTestIT.java:19)
+

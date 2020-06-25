@@ -1,0 +1,14 @@
+{
+	"created_on": "2020-03-31T13:43:053Z",
+	"created_by": "Test User 01",
+	"last_modified_on": "2020-03-31T13:43:053Z",
+	"last_modified_by":"Test User 02",
+	"first_name":"Test User 01",
+	"last_name":"Test User 01",
+	"street":"Teststrasse",
+	"number":"1",
+	"zip":"6004",
+	"city":"Luzern",
+	"email":"testcustomer@stud.hslu.ch",
+	"phone":"0775388087"
+}

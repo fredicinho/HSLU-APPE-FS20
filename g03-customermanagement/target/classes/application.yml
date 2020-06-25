@@ -1,0 +1,16 @@
+micronaut:
+    application:
+        name: customermanagement
+    server:
+        port: 8090
+
+rabbitmq:
+    host: bus
+    #host: 192.168.99.100
+    username: appe
+    password: appe
+
+mongodb:
+    uri: mongodb://mongo:27017/customer-management-DB
+    #uri: mongodb://192.168.99.100:27019/customer-management-DB
+

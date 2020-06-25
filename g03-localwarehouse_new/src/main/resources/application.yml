@@ -1,0 +1,12 @@
+micronaut:
+    application:
+        name: localWarehouse
+    server:
+        port: 8094
+
+rabbitmq:
+    host: bus
+    #host: 192.168.99.100
+    username: appe
+    password: appe
+

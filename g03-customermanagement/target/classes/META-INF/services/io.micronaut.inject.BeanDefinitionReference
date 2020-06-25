@@ -1,0 +1,6 @@
+ch.hslu.appe.entities.$MongoDBDefinitionClass
+ch.hslu.appe.business.$CustomerBusinessLogicDefinitionClass
+ch.hslu.appe.entities.$BillCrudToMongoDbDefinitionClass
+ch.hslu.appe.entities.$CustomerCrudToMongoDbDefinitionClass
+ch.hslu.appe.bus.$CustomerListenerDefinitionClass
+ch.hslu.appe.business.$ChannelPoolListenerDefinitionClass

@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: ch.hslu.appe.micro.CustomerControllerTestIT
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.208 s <<< FAILURE! - in ch.hslu.appe.micro.CustomerControllerTestIT
+ch.hslu.appe.micro.CustomerControllerTestIT.testGetOneByID  Time elapsed: 0.098 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+
+Expecting:
+ <500>
+to be equal to:
+ <200>
+but was not.
+	at ch.hslu.appe.micro.CustomerControllerTestIT.testGetOneByID(CustomerControllerTestIT.java:22)
+

@@ -1,0 +1,22 @@
+{
+  "metadata": {
+    "creation": {
+      "date": "2020-03-31T13:43:05Z",
+      "user": "testuser01"
+    },
+    
+    "last_modification": {
+      "date": "2020-03-31T13:43:05Z",
+      "user": "testuser02"
+    }
+  },
+  
+  "first_name": "Customer First Name",
+  "last_name": "Customer Last Name",
+  "street": "Teststrasse",
+  "number": "1",
+  "zip": "6004",
+  "city": "Luzern",
+  "email": "testcustomer@stud.hslu.ch",
+  "phone": "+41775388087"
+}

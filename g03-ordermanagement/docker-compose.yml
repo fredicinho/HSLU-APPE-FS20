@@ -1,0 +1,58 @@
+# Container orchestration for auto CD APPE.
+#
+# roland.christen@hslu.ch
+##
+
+version: '3.2'
+
+networks:
+ backend:
+    external:
+      name: ${GROUP_ID}_backend
+ frontend:
+    external:
+      name: ${GROUP_ID}_frontend
+
+ ##
+ # uncomment this block to expose the service over HTTP
+ ## 
+ #frontend:
+ #   external:
+ #     name: ${GROUP_ID}_frontend
+
+services:
+
+  app:
+    image: $IMAGE_ID
+    build: .
+    restart: always
+    expose:
+      - "8096"
+    networks:
+      - backend
+      - frontend
+    environment:
+      - VIRTUAL_HOST=om.${HOST_URL}
+
+  ordermanagement_mongo:
+    image: hub.edu.abiz.ch/appe/system/mongodb:stable
+    restart: always
+    networks:
+      - backend
+  
+  mongo-viewer:
+    image: hub.edu.abiz.ch/appe/system/mongodb-viewer:stable
+    restart: always
+    environment:
+      - VIRTUAL_HOST=dbom.${HOST_URL}
+    networks:
+      - backend
+      - frontend
+    links:
+      - "ordermanagement_mongo:mongo"
+
+    ##
+    # uncomment this block to expose the service over HTTP
+    ## 
+    #environment:
+    #  - VIRTUAL_HOST=${CI_PROJECT_NAME}.${HOST_URL}

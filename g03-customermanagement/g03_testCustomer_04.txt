@@ -1,0 +1,11 @@
+{
+  "first_name": "Walter",
+  "last_name": "White",
+  "street": "Wyoming Bldv",
+  "number": "1501",
+  "zip": "8002",
+  "city": "Albuquerque",
+  "email": "walter.white@breakingbad.com",
+  "phone": "+41787894502"
+}
+

@@ -1,0 +1,14 @@
+ch.hslu.appe.business.$CustomerClientSync$InterceptedDefinitionClass
+ch.hslu.appe.micro.$BillControllerDefinitionClass
+ch.hslu.appe.micro.$ReorderControllerDefinitionClass
+ch.hslu.appe.business.$OrderClientSync$InterceptedDefinitionClass
+ch.hslu.appe.micro.$OrderConfirmationControllerDefinitionClass
+ch.hslu.appe.business.$StorageClientSync$InterceptedDefinitionClass
+ch.hslu.appe.micro.$CustomerFilterDefinitionClass
+ch.hslu.appe.micro.$StorageControllerDefinitionClass
+ch.hslu.appe.business.$CustomerClientAsync$InterceptedDefinitionClass
+ch.hslu.appe.business.$ReorderClientSync$InterceptedDefinitionClass
+ch.hslu.appe.business.$OrderClientAsync$InterceptedDefinitionClass
+ch.hslu.appe.micro.$OrderControllerDefinitionClass
+ch.hslu.appe.micro.$CustomerControllerDefinitionClass
+ch.hslu.appe.business.$ChannelPoolListenerDefinitionClass

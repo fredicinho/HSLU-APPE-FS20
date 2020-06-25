@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: ch.hslu.appe.micro.OrderControllerTestIT
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 10.691 s <<< FAILURE! - in ch.hslu.appe.micro.OrderControllerTestIT
+ch.hslu.appe.micro.OrderControllerTestIT.testOrderGetOne  Time elapsed: 10.147 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+
+Expecting:
+ <500>
+to be equal to:
+ <200>
+but was not.
+	at ch.hslu.appe.micro.OrderControllerTestIT.testOrderGetOne(OrderControllerTestIT.java:29)
+

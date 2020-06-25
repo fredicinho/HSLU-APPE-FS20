@@ -1,0 +1,28 @@
+# Container orchestration for auto CD APPE.
+#
+# roland.christen@hslu.ch
+##
+
+version: '3.2'
+
+networks:
+ backend:
+    external:
+      name: ${GROUP_ID}_backend
+ frontend:
+    external:
+      name: ${GROUP_ID}_frontend
+
+services:
+
+  app:
+    image: $IMAGE_ID
+    build: .
+    restart: always
+    expose:
+      - "8090"
+    networks:
+      - backend
+      - frontend
+    environment:
+      - VIRTUAL_HOST=restinterface.${HOST_URL}

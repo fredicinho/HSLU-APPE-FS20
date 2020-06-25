@@ -1,0 +1,50 @@
+# Container orchestration for auto CD APPE.
+#
+# roland.christen@hslu.ch
+##
+
+version: '3.2'
+
+networks:
+  backend:
+    external:
+      name: ${GROUP_ID}_backend
+  frontend:
+    external:
+      name: ${GROUP_ID}_frontend
+
+services:
+
+  app:
+    image: $IMAGE_ID
+    build: .
+    restart: always
+    expose:
+      - "8092"
+    networks:
+      - backend
+      - frontend
+    environment:
+      - VIRTUAL_HOST=gw.${HOST_URL}
+
+  localwarehouse_mongo:
+    image: hub.edu.abiz.ch/appe/system/mongodb:stable
+    restart: always
+    volumes:
+      - mongodb_data_container:/data/db
+    networks:
+      - backend
+  
+  mongo-viewer:
+    image: hub.edu.abiz.ch/appe/system/mongodb-viewer:stable
+    restart: always
+    environment:
+      - VIRTUAL_HOST=dbwh.${HOST_URL}
+    networks:
+      - backend
+      - frontend
+    links:
+      - "localwarehouse_mongo:mongo"
+
+volumes:
+  mongodb_data_container:

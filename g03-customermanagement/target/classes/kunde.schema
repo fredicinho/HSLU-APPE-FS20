@@ -1,0 +1,68 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"$id": "http://www.hslu.ch/appe/g03/schemas/blub6schema.json",
+	"title": "Schema für Kundendaten-JSON-Datei",
+	
+	"definitions": {
+		"metadata_change": {
+			"type": "object",
+			"properties": {
+				"date": {
+					"type": "string",
+					"format": "date-time"
+				},
+				"user": {
+					"type":"string"
+				}
+			}
+		}
+	},
+	
+  "type": "object",
+  "properties": {
+	  "metadata": {
+      "type": "object",
+      "properties": {
+        "creation": {
+          "$ref": "#/definitions/metadata_change"
+        },
+        "last_modification": {
+          "$ref": "#/definitions/metadata_change"
+        }
+      },
+		  "additionalProperties": false
+	  },
+		"_id": {
+		    "type":"string"
+		},
+		"first_name": {
+			"type": "string"
+		},
+		"last_name": {
+			"type": "string"
+		},
+		"street": {
+			"type": "string"
+		},
+		"number": {
+			"type": "string"
+		},
+		"zip": {
+			"type": "string",
+			"pattern": "^[0-9]{4}$"
+		},
+		"city": {
+			"type": "string"
+		},
+		"email": {
+			"type": "string"
+		},
+		"phone": {
+			"type": "string"
+		}
+  },
+  "additionalProperties": false,
+	
+	"required": [ "first_name", "last_name", "street", "number", "zip", "city", "email" ]
+	
+}
