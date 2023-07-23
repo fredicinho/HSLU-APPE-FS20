@@ -109,7 +109,7 @@
         <asciidoctorj.pdf.version>1.5.2</asciidoctorj.pdf.version>
         <asciidoctorj.version>2.2.0</asciidoctorj.version>
 
-        <log4j2.version>2.13.1</log4j2.version>
+        <log4j2.version>2.17.1</log4j2.version>
         <junit5.version>5.6.0</junit5.version>
         <jackson.version>2.10.2</jackson.version>
         <rabbitmq.version>5.8.0</rabbitmq.version>
